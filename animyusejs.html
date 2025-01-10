@@ -1,0 +1,89 @@
+<html>
+    <style>
+        body{
+            background:linear-gradient(120deg,blue,skyblue);
+            justify-content: center;
+            align-items: center;
+            white-space-collapse: none;
+        }
+        #xx{
+            width:410px;
+            height: 410px;
+            position: relative;
+            background: skyblue;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+            
+        }
+        #animate{
+            width:50px;
+            height: 50px;
+            position: absolute;
+            background-color: orange;
+        border-radius: 50px;
+        }
+        #animate1{
+            width:50px;
+            height: 50px;
+            position: absolute;
+            background-color: rgb(58, 26, 189);
+        border-radius: 50px;
+        }
+        #animate2{
+            width:50px;
+            height: 50px;
+            position: absolute;
+            background-color: rgb(19, 169, 71);
+        border-radius: 50px;
+        }
+        #animate3{
+            width:50px;
+            height: 50px;
+            position: relative;
+            background-color: rgb(255, 0, 0);
+        border-radius: 50px;
+        }
+        button:hover{
+            transform: translateY(-3);
+            box-shadow: 3px 4px 5px red;
+        }
+    </style>
+    <body>
+        <p><button onclick="myMove()">click here</button></p>
+        <center><div id="xx"></div></center>
+             <div id="animate"></div>
+            <div id="animate1"></div>
+            <div id="animate2"></div>
+            <div id="animate3"></div>
+        </div>
+        <script>
+            function myMove(){
+                let id=null;
+                const obj=document.getElementById("animate");
+                const obj1=document.getElementById("animate1");
+                const obj2=document.getElementById("animate2");
+                const obj3=document.getElementById("animate3");
+                let move=0;
+                clearInterval(id);
+                id=setInterval(frame,6);
+                //function definition
+                function frame(){
+                    if(move === 350){
+                        clearInterval(id);
+                    }else{
+                        move++;
+                        obj.style.top= move + "px";
+                        obj.style.right=move+"px";
+                        obj1.style.top= move + "px";
+                        obj1.style.left=move+"px";
+                        obj2.style.bottom= move + "px";
+                        obj2.style.right=move+"px";
+                        obj3.style.bottom= move + "px";
+                        obj3.style.left=move+"px";
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <h2>Javascript validation</h2>
+        <p>please enter a number between 1 to 10:</p>
+        <input id="val">
+        <button type="button" onclick="myFun()">submit</button>
+        <p id="demo"></p>
+        <script>
+            function myFun(){
+                let a=document.getElementById("val").value;
+                let res;
+                if(a<1||a>10){
+                    res="input was incorrect";
+                }else{
+                    res="validte success";
+                }
+                document.getElementById('demo').innerHTML=res;
+            }
+        </script>
+    </body>
+</html>

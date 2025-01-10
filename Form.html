@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>Impressive From Design</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: linear-gradient(120,rgb(157, 35, 35));
+                color: rgb(13, 86, 150);
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 110vh;
+            }
+            .form{
+                background-color: aquamarine;
+                backdrop-filter: blur(12px);
+                padding: 40px;
+                border-radius: 15px;
+                width: 100%;
+                max-width: 400px;
+                box-shadow: 0 8px 20px black;
+            }
+            .form h1{
+                text-align: center;
+                margin-bottom: 20px;
+                font-size: 30px;
+                color: rgb(83, 164, 214);
+                text-shadow: 1px 3px 1px black;
+            }
+
+            .form lable{
+                display: block;
+                margin-bottom: 8px;
+                font-weight: bold;
+                color: rgb(19, 17, 17);
+                
+            }
+            .form input[type="text"],
+            .form input[type="email"],
+            .form input[type="password"],
+            .form button{
+                display: block;
+                padding: 12px 20px;
+                margin-bottom: 18px;
+                border-radius: 10px;
+                outline: none;
+                font-size: 1rem;
+                transition: all 0.5s ;
+            
+            }
+
+            .form input[type="text"],
+            .form input[type="email"],
+            .form input[type="password"]{
+                background-color: white;
+                box-shadow: 0 5px 8px black;
+                width: 100%;
+            }
+            .form button{
+                font-weight: bold;
+                box-shadow: 0 4px 8px black;
+                width: 100%;
+            }
+            .form button:hover{
+                background:rgb(33, 197, 42);
+                box-shadow: 0 6px 16px rgb(255, 150, 2);
+                transform: translateY(-3ms);
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        <div class="form">
+            <form>
+            <h1>Sign up</h1>
+            <lable for="name">Name</lable>
+            <input type="text" id="name" name="name" placeholder="Enter your name here" required>
+
+            <lable for="email">Email</lable>
+            <input type="email" id="email" name="email"placeholder="Enter your eamil here" required>
+            
+            <lable for="password">password</lable>
+            <input type="password" id="password" name="password"placeholder="Enter your password here" required>
+                <br>
+            <button type="submit">Submit</button>
+            <p>If you already have an account?
+            <a href="">Login here</a></p>
+
+            </form>
+        </div>
+    </body>
+</html>

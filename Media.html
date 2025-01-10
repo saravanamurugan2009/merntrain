@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <title>Responsive Media page</title>
+        <style>
+
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                line-height: 1.5;
+                background: linear-gradient(120deg,rgb(102, 98, 228),yellow);
+            }
+            header{
+                text-align: center;
+                padding: 50px,28px;
+                background: linear-gradient(130deg,rgb(98, 107, 9),rgb(62, 211, 114));
+            }
+            header h1{
+                font-size: 3rem;
+                color: rgb(60, 4, 213);
+           margin-bottom: 30px;
+            }
+            header p{
+                font-size: 1rem;
+                margin-bottom: 20px;
+            }
+
+            .yt{
+                background: brown;
+                color: white;
+                padding: 5px 15px;
+                text-decoration: none;
+                font-size: 1.3rem;
+                border-radius: 35px;
+                box-shadow: black;
+                transition:transform 0.5s,box-shadow 0.5s;
+            }
+            .yt:hover{
+                transform: translateY(-6px);
+                background-color: blue;
+                box-shadow: 0 10px 20px orange;
+            }
+            .grid-view{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                gap: 50px;
+                padding: 50px 30px;
+                max-width: 1150px;
+            }
+            .grid{
+                background: lightcoral;
+                border-radius: 30px;
+              text-align: center;
+               
+            }
+            .grid:hover{
+                transform: translateY(-3px);
+                background-color: rgb(24, 154, 163);  
+                box-shadow: 0 10px 20px rgb(11, 21, 195); 
+            }
+            .grid h2{
+                font-size: 1.7rem;
+                margin-bottom: 30px 20px;
+                color: rgb(21, 6, 112);
+            }
+            .grid p{
+                font-size: 1rem;
+                color: rgb(4, 69, 40);
+            }
+            footer{
+                text-align: center;
+                padding: 10px;
+                background: blue;
+                color: aliceblue;
+                font-weight: bold;
+            }
+
+            @media(max-width:1150px){
+                .grid-view{
+                    grid-template-columns: repeat(2,0.8fr);   
+                }
+                header h1{
+                    font-family: 'Times New Roman', Times, serif;
+                    color: rgb(234, 14, 153);
+                }
+                header p{
+                    font-size: 5rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Landing page</h1>
+            <p>Here we are exprience the Responsive Media page in Loding page</p>
+            <a href="https://www.youtube.com/embed/QCU72kTnkUU?si=nvLsBNINVUFRco9z"class="yt">lets Begin!</a>
+        </header>
+        <section class ="grid-View">
+            <div class="grid">
+                <h2>Discover of the option</h2>
+                <p>Here is a innovite design which response virtully and intersting</p>
+            </div>
+
+            <div class="grid">
+                <h2>Discover of the second option</h2>
+                <p>vilayadu mankathada vidamatan enga atha da velivesam </p>
+            </div>
+
+            <div class="grid">
+                <h2>Discover of the third option</h2>
+                <p>naa ready than varavaaa!! annea ready than varavaaa!! </p>
+            </div>
+
+            <div class="grid">
+                <h2>Discover of the forth option</h2>
+                <p>nanga vera marii nanga vera marii </p>
+            </div>
+
+            <div class="grid">
+                <h2>Discover of the fifth option</h2>
+                <p>yella nalume nalla naluthan yella nerame nalla neram than!!!</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>@copy;2025 Responsive Media page.All rights are reserved</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Theme animation using Javascript</title>
+    </head><style>
+    body{
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ background: white;
+ margin: 0;
+ padding: 0;
+ transition: background 0.5s ,color 0.5s;
+    }
+    .container
+    {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding: 50px;
+    }
+    h2{
+        font-weight: 600;
+        font-size: 6rem;
+        color: blue;
+        
+    }
+    .list{
+        list-style: none;
+        padding:0;
+        margin: 20px 0;
+    }
+    .list-item{
+        background: white;
+        margin: 15px 0;
+        padding:15px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px black;
+        font-size: 1.2rem;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .list-item:hover{
+
+    }
+    .list-item::before{
+        position: absolute;
+        width:5px;
+        height: 100px;
+        background: linear-gradient(to);
+        left:0;
+        top:0;
+        transition: 0.4s;
+    }
+    .list-item:
+    </style>
+    <body>
+        <button class="btn" onclick="DarkMode()">DarkMode</button>
+        <div class="container">
+            <h2>Theme animation</h2>
+            <ul class="list">
+                <li class="list-item">
+                    <span>Javascript</span>
+                    <button class="button">start</button>
+
+                </li>
+                <li class="list-item">
+                    <span>master Javascript</span>
+                    <button class="button">accsess</button>
+
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
